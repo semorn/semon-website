@@ -1,0 +1,480 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="ä¸­å½è®¾è®¡å¸ï¼ä¼ç§è®¾è®¡å¸ï¼è®¾è®¡å¸ä¸ªç«ï¼è®¾è®¡å¸ä¸ªäººåå®¢ï¼äº§åè®¾è®¡å¸ï¼ä¸ªäººåå®¢ä¸ªç«">
+    <meta name="keywords" content="ä¸­å½è®¾è®¡å¸ï¼ä¼ç§è®¾è®¡å¸ï¼è®¾è®¡å¸ä¸ªç«ï¼è®¾è®¡å¸ä¸ªäººåå®¢ï¼äº§åè®¾è®¡å¸ï¼ä¸ªäººåå®¢ä¸ªç«, Asorn">
+    <meta name="author" content="Asorn">
+    <title>Asorn - Product Designer</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/snow.css">
+    <link rel="shortcut icon" href="./assets/public/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/public/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Asorn">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YP97QMTS16"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YP97QMTS16');
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?f65882c2c20bc920cff590ff3d2098b8";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <canvas class="fireworks"></canvas>
+    <div class="head" id="headscrollbg">
+        <div class="main">
+            <div class="main-left">
+                <a href="./index.html" class="logo"><img src="./assets/public/logo_graph.svg"></a>
+                <div class="tag tag-cooperate" onclick="window.open('https://www.xiaohongshu.com/goods-detail/6887372186c0df0001e0e0c9?xsec_token=XBVjc4lVke4qkgAvLmJPHQoQ2aQiZof4ZB4emR_QCMdHo=&xsec_source=app_share&instation_link=xhsdiscover%3A%2F%2Fgoods_detail%2F6887372186c0df0001e0e0c9%3Ftrade_ext%3DeyJjaGFubmVsSW5mbyI6bnVsbCwiZHNUb2tlbkluZm8iOm51bGwsInNoYXJlTGluayI6Imh0dHBzOi8vd3d3LnhpYW9ob25nc2h1LmNvbS9nb29kcy1kZXRhaWwvNjg4NzM3MjE4NmMwZGYwMDAxZTBlMGM5P2FwcHVpZD01OGZlYmRhYjUwYzRiNDUyN2VmMGRjMDkiLCJsaXZlSW5mbyI6bnVsbCwic2hvcEluZm8iOm51bGwsImdvb2RzTm90ZUluZm8iOm51bGwsImNoYXRJbmZvIjpudWxsLCJzZWFyY2hJbmZvIjpudWxsLCJwcmVmZXIiOm51bGx9%26rate_limit_meta%3DitemId%253D6887372186c0df0001e0e0c8%26rn%3Dtrue&xhsshare=CopyLink&appuid=58febdab50c4b4527ef0dc09&apptime=1753760946&share_id=069c919f07314dd4b978c8b9d4e00625', '_blank')">
+                    <div class="breath-dot"></div>æºç åºå®
+                </div>
+            </div>
+            <div class="menu" id="main-menu">
+                <li class="magical btn nav" onclick="window.location.href='./index.html'">é¦é¡µ</li>
+                <li class="magical btn" onclick="window.location.href='./work.html'">ä½å</li>
+                <li class="magical btn" onclick="window.location.href='./tool.html'">å·¥å·</li>
+                <li class="magical btn" onclick="window.location.href='./blog.html'">ç¥è¯</li>
+                <li class="magical btn" onclick="window.location.href='./book.html'">ä¹¦ç±</li>
+                <li class="magical btn" onclick="window.location.href='./about.html'">å³äº</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <li class="magical btn menu-expand-btn" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content" id="menu-panel-content"></div>
+                <div class="menu-close-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.5858 12L4.29291 18.2929L5.70712 19.7071L12 13.4142L18.2929 19.7071L19.7071 18.2929L13.4142 12L19.7071 5.70712L18.2929 4.29291L12 10.5858L5.70712 4.29291L4.29291 5.70712L10.5858 12Z"
+                            fill="#E8E8F6" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index">
+        <div class="hello">
+            <div class="hello-left">
+                <div class="title">
+                    <div class="title-hi">Hi, I'm</div>
+                    <a class="title-name text-effect">Asorn</a>
+                </div>
+                <!-- <div class="loader"></div> -->
+                <div class="hello-introduce">
+                    10 å¹´èè®¾è®¡å¸ï¼èµæ·±<span> B ç«¯äº§åè®¾è®¡ </span>ä¸å®¶ï¼æ·±èè®¾è®¡ç³»ç»ãæ éç¢è®¾è®¡ä¸è®¾è®¡å·¥ç¨åï¼è¿ä¼ç¹å¿ä»£ç ã<br>ç­è¡·äº<span> ææ¯çæ éå¯è½æ§</span>ï¼ä¹ä¸æ³¨äºæ¢ç´¢ <span>äº§åè®¾è®¡çä»·å¼è§</span>ï¼å¨æè´çè®¾è®¡ãäº¤äºä¸ææ¯åå®¹ãä¸å¡çè§£ä¹é´å¯»æ±å¹³è¡¡ä»¥è§£å³é®é¢ã
+                </div>
+                <div class="hello-actions">
+                    <div class="magical primary-btn" style="cursor: not-allowed;"><a href="javascript:void (0);" style="text-decoration: line-through; cursor: not-allowed;">ä¸è½½ç®å</a><div class="btn-snow"></div></div>
+                    <div class="magical btn normal-btn">
+                        <a href='https://pxcool.com' target="_blank">ð New Product â</a>
+                        <div class="glowing-border"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hello-right">
+                <div class="eyes-container">
+                    <div class="eye eye-pic-one">
+                        <div class="pupil"></div>
+                    </div>
+                    <div class="eye eye-pic-two">
+                        <div class="pupil"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="power-list-container load-pro">
+                <div class="power-list">
+                    <div class="power-card load-item">
+                        <div class="power-container">
+                            <div class="card-img" style="background-image: url('./assets/index/tob.svg')"></div>
+                            <div class="title">B ç«¯è®¾è®¡</div>
+                        </div>
+                        <span class="power-separator"></span>
+                    </div>
+                    <div class="power-card load-item">
+                        <div class="power-container">
+                            <div class="card-img" style="background-image: url('./assets/index/app.svg')"></div>
+                            <div class="title">ç§»å¨ç«¯è®¾è®¡</div>
+                        </div>
+                        <span class="power-separator"></span>
+                    </div>
+                    <div class="power-card load-item">
+                        <div class="power-container">
+                            <div class="card-img" style="background-image: url('./assets/index/web.svg')"></div>
+                            <div class="title">ç½ç«è®¾è®¡</div>
+                        </div>
+                        <span class="power-separator"></span>
+                    </div>
+                    <div class="power-card load-item">
+                        <div class="power-container">
+                            <div class="card-img" style="background-image: url('./assets/index/interactive.svg')"></div>
+                            <div class="title">äº¤äºè®¾è®¡</div>
+                        </div>
+                        <span class="power-separator"></span>
+                    </div>
+                    <div class="power-card load-item">
+                        <div class="power-container">
+                            <div class="card-img" style="background-image: url('./assets/index/assets.svg')"></div>
+                            <div class="title">è§èå®ä¹</div>
+                        </div>
+                        <span class="power-separator"></span>
+                    </div>
+                    <div class="power-card load-item">
+                        <div class="power-container">
+                            <div class="card-img" style="background-image: url('./assets/index/ai.svg')"></div>
+                            <div class="title">AI èµè½</div>
+                        </div>
+                        <span class="power-separator"></span>
+                    </div>
+                    <div class="power-card load-item">
+                        <div class="power-container">
+                            <div class="card-img" style="background-image: url('./assets/index/code.svg')"></div>
+                            <div class="title">å¼åå©å</div>
+                        </div>
+                    </div>
+                    <div class="power-card sticky-item" id="sticky-item">
+                        <div class="loader"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="link-list load-pro">
+                <div class="magical link-card">
+                    <a href="https://www.yuque.com/asorn" target="_blank">
+                        <img src="./assets/index/yuque.png" alt="">
+                        <div class="info">
+                            <div class="info-title">è¯­é</div>
+                            <div class="info-desc">15w+ å­ç»éªåäº«</div>
+                        </div>
+                        <div class="icon icon-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
+                                <path
+                                    d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                    fill="#B3B3C1"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical link-card">
+                    <a href="https://github.com/asorn" target="_blank">
+                        <img src="./assets/index/github.png" alt="">
+                        <div class="info">
+                            <div class="info-title">Github</div>
+                            <div class="info-desc">æ¥å¸¸ç ç©¶è´¡ç®çä»£ç </div>
+                        </div>
+                        <div class="icon icon-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
+                                <path
+                                    d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                    fill="#B3B3C1"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical link-card">
+                    <a href="https://www.figma.com/@asorn" target="_blank">
+                        <img src="./assets/index/figma.png" alt="">
+                        <div class="info">
+                            <div class="info-title">Figma ç¤¾åº</div>
+                            <div class="info-desc">æ ç§å¥ç®çè®¾è®¡èµæº</div>
+                        </div>
+                        <div class="icon icon-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
+                                <path
+                                    d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                    fill="#B3B3C1"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical link-card">
+                    <a href="https://www.xiaohongshu.com/user/profile/58febdab50c4b4527ef0dc09" target="_blank">
+                        <img src="./assets/index/xiaohongshu.png" alt="">
+                        <div class="info">
+                            <div class="info-title">å°çº¢ä¹¦</div>
+                            <div class="info-desc">çæ´»ç¬è®°ä¸åºéº</div>
+                        </div>
+                        <div class="icon icon-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
+                                <path
+                                    d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                    fill="#B3B3C1"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical link-card">
+                    <a href="javascript:void(0)">
+                        <img src="./assets/index/gongzhonghao.png" alt="">
+                        <div class="info">
+                            <div class="info-title">å¬ä¼å·</div>
+                            <div class="info-desc">æç´¢âä¸åªå°çâæâbiliuxâ</div>
+                        </div>
+                        <div class="icon icon-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
+                                <path
+                                    d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                    fill="#B3B3C1"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical link-card">
+                    <a href="https://dribbble.com/Asorn" target="_blank">
+                        <img src="./assets/index/dribbble.png" alt="">
+                        <div class="info">
+                            <div class="info-title">Dribbble</div>
+                            <div class="info-desc">æçè®¾è®¡ç¤¾åº</div>
+                        </div>
+                        <div class="icon icon-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
+                                <path
+                                    d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                    fill="#B3B3C1"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="link-list load-pro">
+                <div class="magical link-card">
+                    <a href="https://qingicon.com/" target="_blank">
+                        <img src="./assets/index/qingicon.png" alt="">
+                        <div class="info">
+                            <div class="info-title">QingIcon</div>
+                            <div class="info-desc">æçå¼æºå¾æ åº</div>
+                        </div>
+                        <div class="icon icon-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
+                                <path
+                                    d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                    fill="#B3B3C1"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical link-card">
+                    <a href="https://www.figma.com/community/plugin/1111565622161029659/figicon" target="_blank">
+                        <img src="./assets/index/figicon.png" alt="">
+                        <div class="info">
+                            <div class="info-title">Figicon</div>
+                            <div class="info-desc">QingIcon Figma æä»¶</div>
+                        </div>
+                        <div class="icon icon-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
+                                <path
+                                    d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                    fill="#B3B3C1"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical link-card">
+                    <a href="https://www.larkmap.com/" target="_blank">
+                        <img src="./assets/index/larkmap.png" alt="">
+                        <div class="info">
+                            <div class="info-title">Larkmap</div>
+                            <div class="info-desc">æçè®¾è®¡å¸å¯¼èª</div>
+                        </div>
+                        <div class="icon icon-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
+                                <path
+                                    d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                    fill="#B3B3C1"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical link-card">
+                    <a href="https://www.pxcool.com/" target="_blank">
+                        <img src="./assets/index/pxcool.png" alt="">
+                        <div class="info">
+                            <div class="info-title">PxCool</div>
+                            <div class="info-desc">éä¸ä¸äººå£«è®¾è®¡å·¥å·ç®±</div>
+                        </div>
+                        <div class="icon icon-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
+                                <path
+                                    d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                    fill="#B3B3C1"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical link-card">
+                    <a href="https://www.svg.cool/" target="_blank">
+                        <img src="./assets/index/neoline.png" alt="">
+                        <div class="info">
+                            <div class="info-title">Neoline</div>
+                            <div class="info-desc">æªæ¥ç§æææç»åº</div>
+                        </div>
+                        <div class="icon icon-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
+                                <path
+                                    d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                    fill="#B3B3C1"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical link-card">
+                    <a href="https://adapter.biliui.com/" target="_blank">
+                        <img src="./assets/index/adapter.png" alt="">
+                        <div class="info">
+                            <div class="info-title">Q-Adapter</div>
+                            <div class="info-desc">B ç«¯é¡µé¢æ¨¡çæ»ç»</div>
+                        </div>
+                        <div class="icon icon-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
+                                <path
+                                    d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                    fill="#B3B3C1"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical link-card">
+                    <a href="https://btn.biliui.com/" target="_blank">
+                        <img src="./assets/index/btn.png" alt="">
+                        <div class="info">
+                            <div class="info-title">Linear Buttons</div>
+                            <div class="info-desc">å¼æºç²¾ç¾æé®åº</div>
+                        </div>
+                        <div class="icon icon-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
+                                <path
+                                    d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                    fill="#B3B3C1"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical link-card">
+                    <a href="https://zyz.biliui.com/" target="_blank">
+                        <img src="./assets/index/zhiyuanzhai.png" alt="">
+                        <div class="info">
+                            <div class="info-title">è´è¿æ</div>
+                            <div class="info-desc">ä¸­åå¤ç±å½±å°å¸è</div>
+                        </div>
+                        <div class="icon icon-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
+                                <path
+                                    d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+                                    fill="#B3B3C1"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="copyright">
+                <div>Â© 2023 Design by <a href="https://asorn.cn/" target="_blank">Asorn</a></div>
+                <span>|</span>
+                <div class="fillings">
+                    <a href="http://beian.miit.gov.cn/" target="_blank">æ´¥ICPå¤18006139å·-5</a>
+                </div>
+            </div>
+            <div class="friends">
+                <a href="https://www.pxcool.com/" target="_blank">PxCool</a>
+                <a href="https://larkmap.com/" target="_blank">Larkmap</a>
+                <a href="https://qingicon.com/" target="_blank">QingIcon</a>
+            </div>
+        </div>
+    </div>
+    <div class="widget">
+        <div class="shape-light"></div>
+        <div class="shape-star">
+            <div class="rising-stars rising-stars-visible">
+                <div style="height:1px;width:1px"></div>
+                <div style="height:2px;width:2px"></div>
+                <div style="height:1px;width:1px"></div>
+            </div>
+        </div>
+        <div class="shape-earth"></div>
+    </div>
+    <div class="widget-top"></div>
+    <canvas class="snow-canvas" id="snow-canvas"></canvas>
+</body>
+
+<script>
+    // é¦é¡µè½åæ¿åæ»å¨æç¤ºå¨
+
+    const stickyItem = document.querySelector('#sticky-item');
+    const powerList = document.querySelector('.power-list');
+
+    // æ£æµå®¹å¨æ¯å¦å¯ä»¥æ»å¨
+    function checkScroll() {
+        // å¤æ­æ¯å¦æ»å¨å°æå³ä¾§
+        const isAtRight = powerList.scrollLeft + powerList.clientWidth >= powerList.scrollWidth;
+        if (isAtRight) {
+            // æ»å¨å°æå³ä¾§æ¶éè sticky åç´ 
+            stickyItem.style.opacity = 0;
+        } else {
+            // åå·¦æ»å¨æ¶æ¾ç¤º sticky åç´ 
+            stickyItem.style.opacity = 1;
+        }
+    }
+
+    // æ£æµæ¯å¦éè¦æ¾ç¤º sticky åç´ 
+    function checkVisibility() {
+        if (powerList.scrollWidth > powerList.clientWidth) {
+            // ææ»å¨æ¡æ¶ï¼æ¾ç¤º sticky åç´ 
+            stickyItem.style.opacity = 1;
+        } else {
+            // æ²¡ææ»å¨æ¡æ¶ï¼éè sticky åç´ 
+            stickyItem.style.opacity = 0;
+        }
+    }
+
+    // çå¬æ»å¨äºä»¶
+    powerList.addEventListener('scroll', checkScroll);
+
+    // çå¬çªå£å¤§å°ååäºä»¶
+    window.addEventListener('resize', () => {
+        checkVisibility(); // æ£æ¥æ¯å¦æ¾ç¤º sticky åç´ 
+        checkScroll();     // æ£æ¥æ¯å¦æ»å¨å°æå³ä¾§
+    });
+
+    // åå§æ£æ¥
+    checkVisibility();
+    checkScroll();
+</script>
+<script src="./js/main.min.js"></script>
+<script src='./js/anime.js'></script>
+<script src='./js/firework.js'></script>
+<script src='./js/snow.js'></script>
+
+</html>
